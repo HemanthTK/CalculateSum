@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>CalculateSum</title>
+
+    </head>
+    <body>
+        <div>
+            <p>Enters numbers and click '=' to find Sum</p>
+          <input type="number" id="num1Input" placeholder="Enter Number 1">
+          
+            <select name="operator" id="operator">
+                <option value="+">+</option>
+            </select>
+            <input type="number" id="num2Input" placeholder="Enter Number 2">
+          <input type="button" value="=" onclick = "calculate()">
+          <h1 id="result"></h1>
+        </div>
+        <script>
+            function calculate(){
+                var op=operator.value;
+                 var expression = num1Input.value + op +num2Input.value;
+                 result.innerHTML = eval(expression);
+                
+               }
+        </script>
+    </body>
+</html>
